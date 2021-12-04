@@ -4,7 +4,7 @@
 #
 Name     : php-Bitset
 Version  : 3.0.1
-Release  : 12
+Release  : 13
 URL      : https://pecl.php.net//get/bitset-3.0.1.tgz
 Source0  : https://pecl.php.net//get/bitset-3.0.1.tgz
 Summary  : No detailed summary available
@@ -49,4 +49,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20200930/bitset.so
+/usr/lib64/extensions/no-debug-non-zts-20210902/bitset.so
