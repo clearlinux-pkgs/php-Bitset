@@ -4,7 +4,7 @@
 #
 Name     : php-Bitset
 Version  : 3.0.1
-Release  : 13
+Release  : 14
 URL      : https://pecl.php.net//get/bitset-3.0.1.tgz
 Source0  : https://pecl.php.net//get/bitset-3.0.1.tgz
 Summary  : No detailed summary available
