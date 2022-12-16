@@ -4,13 +4,14 @@
 #
 Name     : php-Bitset
 Version  : 3.0.1
-Release  : 28
+Release  : 29
 URL      : https://pecl.php.net//get/bitset-3.0.1.tgz
 Source0  : https://pecl.php.net//get/bitset-3.0.1.tgz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : PHP-3.01
 Requires: php-Bitset-lib = %{version}-%{release}
+Requires: php-Bitset-license = %{version}-%{release}
 BuildRequires : buildreq-php
 
 %description
@@ -23,9 +24,18 @@ flavoring.
 %package lib
 Summary: lib components for the php-Bitset package.
 Group: Libraries
+Requires: php-Bitset-license = %{version}-%{release}
 
 %description lib
 lib components for the php-Bitset package.
+
+
+%package license
+Summary: license components for the php-Bitset package.
+Group: Default
+
+%description license
+license components for the php-Bitset package.
 
 
 %prep
@@ -41,6 +51,8 @@ phpize
 make  %{?_smp_mflags}
 
 %install
+mkdir -p %{buildroot}/usr/share/package-licenses/php-Bitset
+cp %{_builddir}/bitset-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/php-Bitset/23cb6fa873d559515b754db54720962118c95899
 %make_install
 
 
@@ -49,4 +61,8 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20210902/bitset.so
+/usr/lib64/extensions/no-debug-non-zts-20220829/bitset.so
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/php-Bitset/23cb6fa873d559515b754db54720962118c95899
