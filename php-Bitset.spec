@@ -4,10 +4,10 @@
 # Using build pattern: phpize
 #
 Name     : php-Bitset
-Version  : 3.1.0
-Release  : 37
-URL      : https://pecl.php.net/get/bitset-3.1.0.tgz
-Source0  : https://pecl.php.net/get/bitset-3.1.0.tgz
+Version  : 3.2.0
+Release  : 38
+URL      : https://pecl.php.net/get/bitset-3.2.0.tgz
+Source0  : https://pecl.php.net/get/bitset-3.2.0.tgz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : PHP-3.01
@@ -21,9 +21,9 @@ BuildRequires : buildreq-php
 %description
 BITSET
 Released under the PHP License 3.01
-The BitSet library assists by providing a mechanism to manage sets of bits. This
-provides a similar API (object-based) to java.util.BitSet with some PHP-specific
-flavoring.
+The BitSet extension assists by providing a mechanism to manage sets of bits.
+This provides a similar API (object-based) to java.util.BitSet with some
+PHP-specific flavoring.
 
 %package lib
 Summary: lib components for the php-Bitset package.
@@ -43,10 +43,10 @@ license components for the php-Bitset package.
 
 
 %prep
-%setup -q -n bitset-3.1.0
-cd %{_builddir}/bitset-3.1.0
+%setup -q -n bitset-3.2.0
+cd %{_builddir}/bitset-3.2.0
 pushd ..
-cp -a bitset-3.1.0 buildavx2
+cp -a bitset-3.2.0 buildavx2
 popd
 
 %build
