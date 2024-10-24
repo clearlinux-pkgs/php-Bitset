@@ -7,7 +7,7 @@
 #
 Name     : php-Bitset
 Version  : 3.2.0
-Release  : 71
+Release  : 72
 URL      : https://pecl.php.net/get/bitset-3.2.0.tgz
 Source0  : https://pecl.php.net/get/bitset-3.2.0.tgz
 Summary  : No detailed summary available
